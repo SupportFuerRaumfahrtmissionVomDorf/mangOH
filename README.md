@@ -8,6 +8,30 @@ Base project containing apps and drivers for the mangOH hardware
 
 ## Setup
 
+1. git clone --recursive https://github.com/SupportFuerRaumfahrtmissionVomDorf/mangOH
+1. download the Bosch BSEC Driver from https://community.bosch-sensortec.com/varuj77995/attachments/varuj77995/bst_community-mems-forum/44/1/BSEC_1.4.7.2_GCC_CortexA7_20190225.zip
+   1. unzip BSEC_1.4.7.2_GCC_CortexA7_20190225.zip into the components/boschBSec folder of this project
+   ```
+      cd components/boschBsec
+      wget wget https://community.bosch-sensortec.com/varuj77995/attachments/varuj77995/bst_community-mems-forum/44/1/BSEC_1.4.7.2_GCC_CortexA7_20190225.zip
+      unzip BSEC_1.4.7.2_GCC_CortexA7_20190225.zip
+   ```
+1. setup leaf (e.g. for a Yellow equipped with WP7607):
+   ```
+   cd mangOH # the root folder of this project
+   leaf setup RvD_WP76 -p swi-wp76_5.0.0
+   leaf shell
+   ```
+1. Build the entire system
+   ```
+   make yellow
+   ```
+
+
+<!--
+
+## ORIGINAL Setup
+
 1. Download and install the appropriate toolchain for your WP module from
    [source.sierrawireless.com](https://source.sierrawireless.com)
     1. Click *AirPrime > WP Series > Your WP module > Firmware*
@@ -44,3 +68,4 @@ Base project containing apps and drivers for the mangOH hardware
    previous command will need to be changed slightly depending on which board and module is in use.
    Also note that it may be convenient to put `$LEGATO_ROOT/bin` into your `$PATH` variable for
    easier access to the `update` command.
+-->
