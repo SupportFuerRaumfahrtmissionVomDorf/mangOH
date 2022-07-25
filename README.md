@@ -1,7 +1,7 @@
 # mangOH
 
-** !!!! CAREFUL THIS IS NOT THE MASTER REPOSITORY FOR MangOH !!! **
-** this is a special version adopted for the RvD project **
+**!!!! CAREFUL THIS IS NOT THE MASTER REPOSITORY FOR MangOH !!!**
+**this is a special version adopted for the RvD project**
 
 
 Base project containing apps and drivers for the mangOH hardware
