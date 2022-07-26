@@ -10,6 +10,7 @@
 #include "${LEGATO_ROOT}/default.sdef"
 #include "${LEGATO_ROOT}/modules/WiFi/wifi.sinc"
 #include "sinc/module/${LEGATO_TARGET}.sinc"
+#include "rvd-addons.sdef"
 
 buildVars:
 {

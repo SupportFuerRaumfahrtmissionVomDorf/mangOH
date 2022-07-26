@@ -1,0 +1,40 @@
+//--------------------------------------------------------------------------------------------------
+// Addons for Raumfart vom Dorf Project
+// tseiman, 2022
+//--------------------------------------------------------------------------------------------------
+
+
+apps:
+{
+	$CURDIR/apps/mqttClient-for-Legato/mqttClientApi/mqttClient.adef
+	$CURDIR/apps/mqttClient-for-Legato/mqttCLI/mqttCLI.adef
+	$CURDIR/apps/mqttClient-for-Legato/mqttGoogleCLI/mqttGoogleCLI.adef
+}
+
+commands:
+{
+//    dhub = dataHub:/bin/dhub
+}
+
+interfaceSearch:
+{
+	$CURDIR/apps/mqttClient-for-Legato/mqttClientApi
+	$CURDIR/apps/mqttClient-for-Legato/mqttCLI
+	$CURDIR/apps/mqttClient-for-Legato/mqttGoogleCLI
+}
+
+componentSearch:
+{
+	$CURDIR/apps/mqttClient-for-Legato/mqttClientApi/mqttClientApiComponent
+	$CURDIR/apps/mqttClient-for-Legato/mqttCLI/mqttCliComponent
+	$CURDIR/apps/mqttClient-for-Legato/mqttCLI/mqttCliSrvComponent
+	$CURDIR/apps/mqttClient-for-Legato/mqttGoogleCLI/mqttCliComponent
+	$CURDIR/apps/mqttClient-for-Legato/mqttGoogleCLI/mqttCliSrvComponent
+
+}
+
+//appSearch:
+//{
+//    $CURDIR/apps/mqttClient-for-Legato/mqttClientApi
+//                          
+// }
